@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
+import Carousel from './CarouselComponent';
 
-class Home extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            
-        };
-
-    }
+export default class Home extends Component {
 
     render() {
         return(
-
+            <Carousel classes={this.props.classes}/>
         );
     }
 }
