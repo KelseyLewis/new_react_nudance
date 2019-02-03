@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import {
+    Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
+    Dropdown, DropdownToggle, DropdownMenu, DropdownItem
+} from 'reactstrap';
+import styles from '../../src/App.css'
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -7,18 +11,28 @@ class Header extends Component {
         super(props);
 
         this.state = {
-            isNavOpen: false
+            isNavOpen: false,
+            dropdownOpen: false
         };
 
-        this.toggleNav=this.toggleNav.bind(this);
+        this.toggleNav = this.toggleNav.bind(this);
+        this.toggleDropdown = this.toggleDropdown.bind(this);
     }
-        toggleNav() {
-            this.setState({
-                isNavOpen: !this.state.isNavOpen
-            });
-        }
+    toggleNav() {
+        this.setState({
+            isNavOpen: !this.state.isNavOpen
+        });
+    }
+
+    toggleDropdown() {
+        this.setState({
+            dropdownOpen: !this.state.dropdownOpen
+        });
+    }
+
+
     render() {
-        return(
+        return (
 
             //Code from old project that still needs to be converted
             // <li class = "nav-item dropdown"><a class = "nav-link dropdown-toggle" href = "#" data-toggle="dropdown">Studio</a>
@@ -30,7 +44,7 @@ class Header extends Component {
 
             //React Fragments don't add node to the DOM like a div would
             <React.Fragment>
-                <Jumbotron className="jumbotron">
+                <Jumbotron id="header" className="jumbotron mb-0">
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12 display-4 text-center text-dark">
@@ -41,11 +55,11 @@ class Header extends Component {
                 </Jumbotron>
                 <Navbar dark expand="md" className="navbar navbar-custom navbar-expand-sm sticky-top navbar-dark bg-dark mb-2">
                     <div className="container">
-                        <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className = "mr-auto" href="/">
-                            <img src="assets/images/dance_icon.png" height="30" width ="41"
-                                alt = "Dance Icon" />
+                        <NavbarBrand className="mr-auto" href="/">
+                            <img src="assets/images/dance_icon.png" height="30" width="41"
+                                alt="Dance Icon" />
                         </NavbarBrand>
+                        <NavbarToggler onClick={this.toggleNav} className="mr-2" />
                         <Collapse navbar isOpen={this.state.isNavOpen}>
                             <Nav navbar>
                                 <NavItem>
@@ -53,11 +67,16 @@ class Header extends Component {
                                         <span className="fa fa-home fa-lg"></span> Home
                                     </NavLink>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/aboutus">
-                                        <span className="fa fa-info fa-lg"></span> About Us
-                                    </NavLink>
-                                </NavItem>
+                                <Dropdown nav inNavbar isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
+                                    <DropdownToggle nav caret>
+                                        <span className="fa fa-info fa-lg mr-2"></span>
+                                        <div className="d-inline">About</div>
+                                    </DropdownToggle>
+                                    <DropdownMenu>
+                                        <DropdownItem>About Us</DropdownItem>
+                                        <DropdownItem>Instructors</DropdownItem>
+                                    </DropdownMenu>
+                                </Dropdown>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/classes">
                                         <span className="fa fa-list fa-lg"></span> Classes
@@ -70,7 +89,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/contactus">
-                                        <span className="fa fa-address-card fa-lg"></span> Contact Us
+                                        <span className="fa fa-address-card fa-lg"></span> Contact
                                     </NavLink>
                                 </NavItem>
                             </Nav>
