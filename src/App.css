@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  #header {
 	background: #5f9ea0;
 	color: #fff;
@@ -46,3 +47,145 @@ a {
 	top: -1px;
 }
 
+=======
+.jumbotron {
+  padding: 20px 25px !important;
+  margin: auto !important;
+  border-radius: 0 !important;
+}
+
+.nav {
+  margin: auto !important;
+}
+
+.row {
+  padding: 0px;
+}
+
+.fa-xxs {
+  font-size: 10px !important;
+  align-self: center !important;
+  justify-self: center !important;
+} 
+
+/* Trying to horizontally center content in navbar, but not working :( */
+.navbar-custom {
+  justify-items: center !important;
+}
+
+/* Trying to get the icons to be white and have different hover colors but no luck :/ */
+.btn-social-icon {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  overflow: hidden;
+
+  margin: .3em;
+  cursor: pointer;
+  transition: color 300ms ease, margin-top 300ms ease;
+  transform: translateZ(0);
+    
+  &:hover {
+  margin-top: -1px;
+  }
+
+  &#twitter:hover {
+  color: #77DDF6;
+  }
+
+  &#facebook:hover {
+  color: #3b5998;
+  }
+
+  &#instagram:hover {
+  color: #0177B5;
+  }
+
+  &#youtube:hover {
+  color: 	#cc181e;
+  }
+
+  &#mail:hover {
+  color: #D43402;
+  } 
+}
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+
+.text-adjust {
+  font-size: 1em; }
+
+.carousel {
+  background: #808080; }
+  .carousel .carousel-item {
+    height: 500px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 500px;
+      width: 65%; }
+    .carousel .carousel-item .carousel-caption {
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .carousel #carouselButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #808080;
+    border: #808080; }
+  .carousel button:active {
+    outline: white; }
+  .carousel .fa-pause {
+    color: white; }
+  .carousel .fa-play {
+    color: white; }
+
+@media (max-width: 425px) {
+  .carousel .carousel-item img {
+    width: 100%; } }
+
+/*Tyler's Stuff*/
+#header {
+  background: #5f9ea0;
+  color: #fff; }
+
+h2 {
+  width: 100%;
+  text-align: center;
+  color: #5f9ea0;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px; }
+
+h2 span {
+  background: #fff;
+  padding: 0 10px; }
+
+.footer {
+  padding: 5px 10px; }
+
+#box1 {
+  background: #5f9ea8;
+  color: #343a40; }
+
+#box2 {
+  background: #343a40;
+  color: #fff; }
+
+#main-footer {
+  background: #5f9ea8;
+  color: #fff; }
+
+a {
+  color: inherit; }
+
+.fa-xs {
+  font-size: 0.5rem;
+  position: relative;
+  top: -1px; }
+>>>>>>> b8d8467b7b7763926ec7087ba27326754339d1ff

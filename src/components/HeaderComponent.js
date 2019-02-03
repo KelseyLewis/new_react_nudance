@@ -42,9 +42,13 @@ class Header extends Component {
             //     </div>
             // </li>
 
-            //React Fragments don't add node to the DOM like a div would
+            // React Fragments don't add node to the DOM like a div would
             <React.Fragment>
+<<<<<<< HEAD
                 <Jumbotron id="header" className="jumbotron mb-0">
+=======
+                <Jumbotron className="jumbotron" id="header">
+>>>>>>> b8d8467b7b7763926ec7087ba27326754339d1ff
                     <div className="container">
                         <div className="row row-header">
                             <div className="col-12 display-4 text-center text-dark">
@@ -53,7 +57,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </Jumbotron>
-                <Navbar dark expand="md" className="navbar navbar-custom navbar-expand-sm sticky-top navbar-dark bg-dark mb-2">
+                <Navbar dark expand="md" className="navbar navbar-custom navbar-expand-sm sticky-top navbar-dark bg-dark">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/">
                             <img src="assets/images/dance_icon.png" height="30" width="41"
