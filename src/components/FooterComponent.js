@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Footer(props) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return (
         <div id="main-footer" className="text-center p-4">
             <div className="container">
@@ -36,6 +37,8 @@ function Footer(props) {
                 <br />
                             Copyright &copy; <span id="year"></span> Kelsey Lewis & Tyler Hunstock</p>
 =======
+=======
+>>>>>>> 58267cdebf96da2f2894777d89141cbf0c5b69ca
     return(
         <div className="footer text-center p-4" id="main-footer">
             <div className="container">
@@ -54,7 +57,11 @@ function Footer(props) {
                         <p class="text-light">Nudance Studio <i class="fa fa-circle fa-xxs"></i> 123 Main St, Tacoma, WA 98406 <i class="fa fa-circle fa-xxs"></i> (253) 867-5309 <i class="fa fa-circle fa-xxs"></i> nudance@gmail.com
                         <br></br>
                         &copy; <span id="year"></span> Kelsey Lewis & Tyler Hunstock </p>
+<<<<<<< HEAD
 >>>>>>> b8d8467b7b7763926ec7087ba27326754339d1ff
+=======
+
+>>>>>>> 58267cdebf96da2f2894777d89141cbf0c5b69ca
                     </div>
                 </div>
             </div>

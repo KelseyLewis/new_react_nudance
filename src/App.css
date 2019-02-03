@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 58267cdebf96da2f2894777d89141cbf0c5b69ca
  #header {
 	background: #5f9ea0;
 	color: #fff;
@@ -147,6 +151,7 @@ a {
 
 @media (max-width: 425px) {
   .carousel .carousel-item img {
+<<<<<<< HEAD
     width: 100%; } }
 
 /*Tyler's Stuff*/
@@ -189,3 +194,6 @@ a {
   position: relative;
   top: -1px; }
 >>>>>>> b8d8467b7b7763926ec7087ba27326754339d1ff
+=======
+    width: 100%; } }
+>>>>>>> 58267cdebf96da2f2894777d89141cbf0c5b69ca
