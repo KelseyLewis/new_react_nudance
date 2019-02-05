@@ -7,7 +7,6 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
         {/* ABOUT */}
         <section>
           <Container className="home-inner">
@@ -66,7 +65,7 @@ class About extends Component {
               <div className="col-md-4 mb-4">
                 <Card id="box1" className="h-100">
                   <div className="card-body">
-                    <i className="fas fa-trophy fa-6x" />
+                    <i className="fa fa-trophy fa-6x" />
                     <h3>
                       <strong>RECOGNIZED NATIONALLY</strong>
                     </h3>
@@ -77,7 +76,7 @@ class About extends Component {
               <div className="col-md-4 mb-4">
                 <Card id="box2" className="h-100">
                   <div className="card-body">
-                    <i className="fas fa-users fa-6x" />
+                    <i className="fa fa-users fa-6x" />
                     <h3>
                       <strong>AMAZING INSTRUCTORS</strong>
                     </h3>
@@ -88,7 +87,7 @@ class About extends Component {
               <div className="col-md-4 mb-4">
                 <Card id="box1" className="h-100">
                   <div className="card-body">
-                    <i className="fas fa-thumbs-up fa-6x" />
+                    <i className="fa fa-thumbs-up fa-6x" />
                     <h3>
                       <strong>DECADES OF EXPERIENCE</strong>
                     </h3>
@@ -99,7 +98,7 @@ class About extends Component {
               <div className="col-md-4 mb-4">
                 <Card id="box2" className="h-100">
                   <div className="card-body">
-                    <i className="fas fa-star fa-6x" />
+                    <i className="fa fa-star fa-6x" />
                     <h3>
                       <strong>BROADWAY STYLE SHOWS</strong>
                     </h3>
@@ -110,7 +109,7 @@ class About extends Component {
               <div className="col-md-4 mb-4">
                 <Card id="box1" className="h-100">
                   <div className="card-body">
-                    <i className="fas fa-map-marker-alt fa-6x" />
+                    <i className="fab fa-map-marker-alt fa-6x" />
                     <h3>
                       <strong>3 CONVENIENT LOCATIONS</strong>
                     </h3>
@@ -121,7 +120,7 @@ class About extends Component {
               <div className="col-md-4 mb-4">
                 <Card id="box2" className="h-100">
                   <div className="card-body">
-                    <i className="fas fa-heart fa-6x" />
+                    <i className="fa fa-heart fa-6x" />
                     <h3>
                       <strong>FAMILY ATMOSPHERE</strong>
                     </h3>
@@ -182,9 +181,9 @@ class About extends Component {
       //   <script>
 
       //     //Get the current year for the copyright
-      //     $('#year').text(new Date().getFullYear());
+      //     $('#year').text(new Date().getFullYear());   I moved this to Footer, its working properly
 
-      //     $('.slider').slick({
+      //     $('.slider').slick({ I still need to do this stuf
       //       infinite: true,
       //       slideToShow: 1,
       //       slideToScroll: 1
