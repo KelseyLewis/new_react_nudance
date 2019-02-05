@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-{
-  /* <a href="http://facebook.com"><i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>*/
-}
 
 function Footer(props) {
   const year = new Date().getFullYear();
@@ -49,10 +46,10 @@ function Footer(props) {
           <div className="row justify-content-center">
             <div className="col-auto">
               {/* for some reason all of this has to be on one line for the spacing to work out */}
-              <p class="text-light">
-                Nudance Studio <i class="fa fa-circle fa-xxs" /> 123 Main St,
-                Tacoma, WA 98406 <i class="fa fa-circle fa-xxs" /> (253)
-                867-5309 <i class="fa fa-circle fa-xxs" /> nudance@gmail.com
+              <p className="text-light">
+                Nudance Studio <i className="fa fa-circle fa-xxs" /> 123 Main St,
+                Tacoma, WA 98406 <i className="fa fa-circle fa-xxs" /> (253)
+                867-5309 <i className="fa fa-circle fa-xxs" /> nudance@gmail.com
                 <br /> Copyright &copy; {year} Kelsey Lewis & Tyler Hunstock{" "}
               </p>
             </div>
