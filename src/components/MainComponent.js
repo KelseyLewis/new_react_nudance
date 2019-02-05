@@ -27,8 +27,14 @@ class Main extends Component {
         <Header />
         <Switch>
           <Route path="/home" component={HomePage} />
+<<<<<<< HEAD
+          <Route path="/about" component={About} />
+          {/* <Route />
+                    <Route />  */}
+=======
           <Route path="/about" Component={About} />
           <Redirect to="/home" />
+>>>>>>> 53f39f86a5f11870b7ee86d00c74ed52184e2fa5
         </Switch>
         <Footer />
       </div>
