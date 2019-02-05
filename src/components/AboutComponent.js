@@ -6,7 +6,6 @@ console.log('About Entered');
 class About extends Component {
   render() {
     return (
-<<<<<<< HEAD
       <React.Fragment>
         {/* ABOUT */}
         <section>
@@ -40,20 +39,6 @@ class About extends Component {
                   and supportive environment. NuDance instructors strive to
                   create the self discipline and confidence that is required to
                   achieve success in today&#x2019;s society.
-=======
-      <Container className="home-inner">
-        <Row>
-          <div className="col-12">
-            <div className="col-inner m-5">
-              <h3 className="h2">
-                <strong>NuDance</strong>
-                <p className="lead">
-                  NuDance feels that students should have a variety of
-                  experiences to grow into better dancers and most
-                  importantly to be inspired in their art form. We currently
-                  offer beginning to advanced classnames for dancers as
-                  young as 3 years old through teen and adult age groups.
->>>>>>> 53f39f86a5f11870b7ee86d00c74ed52184e2fa5
                 </p>
               </h3>
             </div>
@@ -84,7 +69,6 @@ class About extends Component {
         <h2><span>WHY CHOOSE NuDance?</span></h2>
 
         {/* ACCOLADE BOXES */}
-<<<<<<< HEAD
         <section id="accolades" className="m-5 text-center">
           <Container>
             <Row className="mb-4 justify-content-center">
@@ -156,77 +140,6 @@ class About extends Component {
             </Row>
           </Container>
         </section>
-=======
-        <Row className="m-5 text-center" id="accolades">
-          <div className="mb-4 justify-content-center">
-            <div className="col-md-4 mb-4">
-              <Card id="box1" className="h-100">
-                <div className="card-body">
-                  <i className="fas fa-trophy fa-6x" />
-                  <h3>
-                    <strong>RECOGNIZED NATIONALLY</strong>
-                  </h3>
-                </div>
-              </Card>
-            </div>
-
-            <div className="col-md-4 mb-4">
-              <Card id="box2" className="h-100">
-                <div className="card-body">
-                  <i className="fas fa-users fa-6x" />
-                  <h3>
-                    <strong>AMAZING INSTRUCTORS</strong>
-                  </h3>
-                </div>
-              </Card>
-            </div>
-
-            <div className="col-md-4 mb-4">
-              <Card id="box1" className="h-100">
-                <div className="card-body">
-                  <i className="fas fa-thumbs-up fa-6x" />
-                  <h3>
-                    <strong>DECADES OF EXPERIENCE</strong>
-                  </h3>
-                </div>
-              </Card>
-            </div>
-
-            <div className="col-md-4 mb-4">
-              <Card id="box2" className="h-100">
-                <div className="card-body">
-                  <i className="fas fa-star fa-6x" />
-                  <h3>
-                    <strong>BROADWAY STYLE SHOWS</strong>
-                  </h3>
-                </div>
-              </Card>
-            </div>
-
-            <div className="col-md-4 mb-4">
-              <Card id="box1" className="h-100">
-                <div className="card-body">
-                  <i className="fas fa-map-marker-alt fa-6x" />
-                  <h3>
-                    <strong>3 CONVENIENT LOCATIONS</strong>
-                  </h3>
-                </div>
-              </Card>
-            </div>
-
-            <div className="col-md-4 mb-4">
-              <Card id="box2" className="h-100">
-                <div className="card-body">
-                  <i className="fas fa-heart fa-6x" />
-                  <h3>
-                    <strong>FAMILY ATMOSPHERE</strong>
-                  </h3>
-                </div>
-              </Card>
-            </div>
-          </div>
-        </Row>
->>>>>>> 53f39f86a5f11870b7ee86d00c74ed52184e2fa5
 
         {/* TESTIMONIALS */}
         <Row className=" p-4 bg-dark text-white text-center" id="testimonials">
