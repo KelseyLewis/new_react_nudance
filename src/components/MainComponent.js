@@ -17,7 +17,9 @@ class Main extends Component {
 
   render() {
     const HomePage = () => {
-      return <Home classes={this.state.classes} />;
+      return (
+        <Home classes={this.state.classes} />
+      );
     };
 
     return (
@@ -26,8 +28,7 @@ class Main extends Component {
         <Switch>
           <Route path="/home" component={HomePage} />
           <Route path="/about" Component={About} />
-          {/* <Route />
-                    <Route />  */}
+          <Redirect to="/home" />
         </Switch>
         <Footer />
       </div>

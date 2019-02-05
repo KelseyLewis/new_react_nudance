@@ -12,10 +12,10 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
-import styles from "../../src/App.css";
+// import styles from "../../src/App.css";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
-import About from "./AboutComponent";
+// import { Link } from "react-router-dom";
+// import About from "./AboutComponent";
 
 class Header extends Component {
   constructor(props) {
@@ -92,11 +92,12 @@ class Header extends Component {
                 >
                   <DropdownToggle nav caret>
                     <span className="fa fa-info fa-lg mr-2" />
-                    <div className="d-inline">About</div>
+                    <div className="d-inline">Studio</div>
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem>
-                      <Link to="/about">About Us</Link>
+                      {/* Idk why this didn't work with link, but it worked with an anchor tag.. */}
+                      <a href="/about">About Us</a>
                     </DropdownItem>
                     <DropdownItem
                       className="nav-link text-dark"
