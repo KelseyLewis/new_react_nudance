@@ -1,50 +1,38 @@
 import React, { Component } from 'react';
-import { Card, CardImg } from 'reactstrap';
-
-console.log('Carousel Entered');
-
-const Slide = ({image}) => {
-    console.log('Slide Entered')
-    // const styles = {
-    //   backgroundImage: `url(${image})`,
-    //   backgroundSize: 'cover',
-    //   backgroundPosition: 'center'
-    // }
-    // return (
-    // <div className="carousel-item" style={styles}></div>,
-    // console.log(styles.backgroundImage)
-    // );
-
+import Slider from "react-slick";
+ 
+class myCarousel extends Component {
+  render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
     return (
-        <Card>
-            <CardImg width="100%" src={image} />
-        </Card>
+      <Slider {...settings}>
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+      </Slider>
     );
-    // }
   }
-
-export default class Carousel extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            currentIndex: 0,
-        };
-    }
-
-    render() {
-        return(
-            <div className="carousel">
-                <div className="carousel-inner">
-                    {this.props.classes.map((danceclass) => (
-                        <Slide key={danceclass.id} image={danceclass.image} />
-                        // console.log(danceclass.id, danceclass.image)
-                        ))
-                    }
-                </div>
-                <h1>TEST</h1> 
-            </div>
-
-        );
-    }
 }
+export default myCarousel;
+

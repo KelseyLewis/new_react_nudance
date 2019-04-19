@@ -40,9 +40,7 @@ class About extends Component {
                   create the self discipline and confidence that is required to
                   achieve success in today&#x2019;s society.
                 </p>
-              </h3>
-            </div>
-          </div>
+              </div>
         </Row>
         <Row>
           <div className="col-md-6 col-sm-12 my-5">
@@ -182,28 +180,8 @@ class About extends Component {
           </div>
         </Row>
       </Container>
-  
-
-      //   <script>
-
-      //     //Get the current year for the copyright
-      //     $('#year').text(new Date().getFullYear());   I moved this to Footer, its working properly
-
-      //     $('.slider').slick({ I still need to do this stuf
-      //       infinite: true,
-      //       slideToShow: 1,
-      //       slideToScroll: 1
-      //     });
-
-      //     $('.card').hover(function() {
-      //       $(this).addClass('shadow-lg').css('cursor', 'pointer');
-      //     },
-      //       function() {
-      //         $(this).removeClass('shadow-lg');
-      //       }
-      //     );
-      //   </script>
-      // </section>
+    </section>
+    </React.Fragment>
     );
   }
 }
