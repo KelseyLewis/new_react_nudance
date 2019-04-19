@@ -18,7 +18,10 @@ class Main extends Component {
   render() {
     const HomePage = () => {
       return (
-        <Home classes={this.state.classes} />
+        <div>
+          <Home />
+          {/* <img src="http://www.wikidancesport.com/Attachments/dances/Salsa/Salsa%20-%204.jpg" /> */}
+        </div>
       );
     };
 

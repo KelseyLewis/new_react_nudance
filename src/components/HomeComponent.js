@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import Carousel from './CarouselComponent';
+import myCarousel from './CarouselComponent';
 
-
-console.log('Home Component entered');
-
-export default class Home extends Component {
+class Home extends Component {
     render() {
         return(
-            <Carousel classes={this.props.classes}/>
+            <div>
+                <myCarousel/>
+            </div>
         );
     }
 }
+
+export default Home;
